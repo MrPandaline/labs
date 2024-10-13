@@ -1,7 +1,9 @@
 package itmo.java.mrpandaline.lab2.mypokemons.heatran;
+
 import itmo.java.mrpandaline.lab2.mypokemons.heatran.moves.*;
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
+
 public class Heatran extends Pokemon{
     public Heatran(String name, int level){
         super(name, level);

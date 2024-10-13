@@ -1,6 +1,5 @@
 package itmo.java.mrpandaline.lab2.mypokemons.heatran.moves;
 
-import ru.ifmo.se.pokemon.Effect;
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.PhysicalMove;
 import ru.ifmo.se.pokemon.Type;
@@ -18,7 +17,6 @@ public class Bulldoze extends PhysicalMove {
 
     @Override
     protected void applyOppEffects(Pokemon pokemon) {
-        Effect e = new Effect().stat(Stat.SPEED, -1);
-        pokemon.addEffect(e);
+        pokemon.setMod(Stat.SPEED, -1);
     }
 }
