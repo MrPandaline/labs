@@ -1,4 +1,4 @@
-package itmo.java.mrpandaline.lab2.mypokemons.honedge.moves;
+package itmo.java.mrpandaline.lab2.mymoves;
 
 import ru.ifmo.se.pokemon.PhysicalMove;
 import ru.ifmo.se.pokemon.Pokemon;
@@ -12,5 +12,10 @@ public class ShadowSneak extends PhysicalMove {
     @Override
     protected boolean checkAccuracy(Pokemon p1, Pokemon p2){
         return true;
+    }
+
+    @Override
+    protected String describe(){
+        return "использует Shadow Sneak";
     }
 }

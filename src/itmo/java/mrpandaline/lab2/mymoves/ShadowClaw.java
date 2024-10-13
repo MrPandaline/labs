@@ -1,4 +1,4 @@
-package itmo.java.mrpandaline.lab2.mypokemons.honedge.moves;
+package itmo.java.mrpandaline.lab2.mymoves;
 
 import ru.ifmo.se.pokemon.PhysicalMove;
 import ru.ifmo.se.pokemon.Pokemon;
@@ -17,5 +17,10 @@ public class ShadowClaw extends PhysicalMove {
     @Override
     protected double calcCriticalHit(Pokemon att, Pokemon def){
         return (att.getStat(Stat.SPEED) / 512) + 1;
+    }
+
+    @Override
+    protected String describe(){
+        return "использует ShadowClaw";
     }
 }

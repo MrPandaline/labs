@@ -1,4 +1,4 @@
-package itmo.java.mrpandaline.lab2.mypokemons.hippopotas.moves;
+package itmo.java.mrpandaline.lab2.mymoves;
 
 import ru.ifmo.se.pokemon.*;
 

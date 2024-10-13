@@ -1,4 +1,4 @@
-package itmo.java.mrpandaline.lab2.mypokemons.heatran.moves;
+package itmo.java.mrpandaline.lab2.mymoves;
 
 import ru.ifmo.se.pokemon.Effect;
 import ru.ifmo.se.pokemon.Pokemon;
@@ -13,7 +13,7 @@ public class RockTomb extends PhysicalMove{
 
     @Override
     protected String describe(){
-        return "использует атаку Rock Tomb";
+        return "использует Rock Tomb";
     }
 
     @Override

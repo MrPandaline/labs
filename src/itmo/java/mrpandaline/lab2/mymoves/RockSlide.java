@@ -1,4 +1,4 @@
-package itmo.java.mrpandaline.lab2.mypokemons.heatran.moves;
+package itmo.java.mrpandaline.lab2.mymoves;
 import itmo.java.mrpandaline.lab2.MyUtils;
 import ru.ifmo.se.pokemon.*;
 
@@ -9,7 +9,7 @@ public class RockSlide extends PhysicalMove {
 
     @Override
     protected String describe(){
-        return "использует атаку Rock Slide";
+        return "использует Rock Slide";
     }
 
     @Override
