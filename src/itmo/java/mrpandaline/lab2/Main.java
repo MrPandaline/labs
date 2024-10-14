@@ -3,7 +3,6 @@ package itmo.java.mrpandaline.lab2;
 import itmo.java.mrpandaline.lab2.mypokemons.*;
 import ru.ifmo.se.pokemon.*;
 
-import java.util.Objects;
 import java.util.Scanner;
 
 public class Main {
