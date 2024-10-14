@@ -28,7 +28,7 @@ public class FlashCannon extends SpecialMove {
     protected void applyOppEffects(Pokemon pokemon) {
         if (MyUtils.chance(0.1)){
             this.flag = true;
-            pokemon.setMod(Stat.SPECIAL_DEFENSE, -2);
+            pokemon.setMod(Stat.SPECIAL_DEFENSE, -1);
         }
     }
 }

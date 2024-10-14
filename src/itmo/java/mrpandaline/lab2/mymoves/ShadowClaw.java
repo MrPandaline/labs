@@ -1,9 +1,6 @@
 package itmo.java.mrpandaline.lab2.mymoves;
 
-import ru.ifmo.se.pokemon.PhysicalMove;
-import ru.ifmo.se.pokemon.Pokemon;
-import ru.ifmo.se.pokemon.Stat;
-import ru.ifmo.se.pokemon.Type;
+import ru.ifmo.se.pokemon.*;
 
 public class ShadowClaw extends PhysicalMove {
     public ShadowClaw(){
@@ -14,9 +11,11 @@ public class ShadowClaw extends PhysicalMove {
     protected boolean checkAccuracy(Pokemon p1, Pokemon p2){
         return true;
     }
+
     @Override
-    protected double calcCriticalHit(Pokemon att, Pokemon def){
-        return (att.getStat(Stat.SPEED) / 512) + 1;
+    protected void applySelfEffects(Pokemon pokemon){
+        Effect eff = new Effect().turns(1).stat(Stat.SPEED, +1);
+        pokemon.addEffect(eff);
     }
 
     @Override
