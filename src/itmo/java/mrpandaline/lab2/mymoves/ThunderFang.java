@@ -13,7 +13,7 @@ public class ThunderFang extends PhysicalMove {
     }
 
     @Override
-    protected void applySelfEffects(Pokemon pokemon) {
+    protected void applyOppEffects(Pokemon pokemon) {
         if (MyUtils.chance(0.1)){
             this.flag1 = true;
             Effect.flinch(pokemon);
@@ -29,16 +29,17 @@ public class ThunderFang extends PhysicalMove {
         String part2 = " с дополнительным эффектом: заставляет оппонента ";
         String part31 = " ощутить страх";
         String part32 = " войти в состояние паралича";
-        if (this.flag1 || this.flag2){
+        if (this.flag1 || this.flag2) {
             message += part2;
-            if (this.flag1  && !this.flag2){
+            if (this.flag1 && !this.flag2) {
                 message += part31;
             }
-            if (this.flag2 && !this.flag1){
+            else if (this.flag2 && !this.flag1) {
                 message += part32;
             }
             else message += part31 + " и " + part32;
         }
+
         return message;
     }
 }

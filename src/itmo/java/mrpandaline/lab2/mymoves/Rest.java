@@ -14,11 +14,12 @@ public class Rest extends StatusMove {
 
     @Override
     protected String describe(){
-        return "использует Rest";
+        return "использует Rest и восстанавливает своё здоровье";
     }
 
     @Override
     protected void applySelfEffects(Pokemon pokemon) {
+        pokemon.restore();
         Effect e = new Effect().condition(Status.SLEEP).turns(2);
         pokemon.addEffect(e);
     }

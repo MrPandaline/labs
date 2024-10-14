@@ -11,7 +11,7 @@ public class Hippopotas extends MyPokemon {
         setStats(68, 72, 78, 38, 42, 32);
         setType(Type.GROUND);
 
-        addMove(new Bite());
+        setMove(new Bite());
         addMove(new DoubleTeam());
         addMove(new Rest());
     }
@@ -19,7 +19,7 @@ public class Hippopotas extends MyPokemon {
         super(name, level, minLevel);
         setType(Type.GROUND);
 
-        addMove(new Bite());
+        setMove(new Bite());
         addMove(new DoubleTeam());
         addMove(new Rest());
     }*/

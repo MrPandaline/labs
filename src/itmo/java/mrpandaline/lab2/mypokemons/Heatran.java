@@ -11,7 +11,7 @@ public class Heatran extends MyPokemon{
         super(name, level, 91);
         setStats(91, 90, 106, 130, 106, 77);
         setType(Type.FIRE, Type.STEEL);
-        addMove(new RockSlide());
+        setMove(new RockSlide());
         addMove(new Bulldoze());
         addMove(new FlashCannon());
         addMove(new RockTomb());

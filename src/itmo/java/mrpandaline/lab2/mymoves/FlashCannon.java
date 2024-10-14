@@ -1,6 +1,6 @@
 package itmo.java.mrpandaline.lab2.mymoves;
 
-import ru.ifmo.se.pokemon.Effect;
+import itmo.java.mrpandaline.lab2.MyUtils;
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.SpecialMove;
 import ru.ifmo.se.pokemon.Type;
@@ -15,9 +15,8 @@ public class FlashCannon extends SpecialMove {
     }
     @Override
     protected String describe(){
-        String message1 = "использует Flash Cannon c дополнительным эффектом: специальная защита снижена на 1";
-        String message2 = "использует Flash Cannon";
-        return this.flag ? message1 : message2;
+        String message1 = " c дополнительным эффектом: специальная защита снижена на 1";
+        return "использует Flash Cannon" + (this.flag ? message1 : "");
     }
 
     @Override
@@ -27,10 +26,9 @@ public class FlashCannon extends SpecialMove {
 
     @Override
     protected void applyOppEffects(Pokemon pokemon) {
-        Effect e = new Effect().chance(0.1).stat(Stat.SPECIAL_DEFENSE, -1).turns(-1);
-        pokemon.addEffect(e);
-        if (e.success()){
+        if (MyUtils.chance(0.1)){
             this.flag = true;
+            pokemon.setMod(Stat.SPECIAL_DEFENSE, -2);
         }
     }
 }

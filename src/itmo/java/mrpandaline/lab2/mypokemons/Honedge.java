@@ -10,7 +10,7 @@ public class Honedge extends MyPokemon {
         setStats(45, 80, 100, 35, 37, 28);
         setType(Type.STEEL, Type.GHOST);
 
-        addMove(new ShadowClaw());
+        setMove(new ShadowClaw());
         addMove(new ShadowSneak());
     }
 
@@ -18,7 +18,7 @@ public class Honedge extends MyPokemon {
         super(name, level, minLevel);
         setType(Type.STEEL, Type.GHOST);
 
-        addMove(new ShadowClaw());
+        setMove(new ShadowClaw());
         addMove(new ShadowSneak());
     }
 }
